@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/timer_default_text"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/mineCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/minecount_default_text"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset_button_text" />
+
+    <GridLayout
+        android:id="@+id/boardGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mineCountTextView"
+        android:layout_above="@id/resetButton"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="10" <!-- Default, will be configured programmatically -->
+        android:rowCount="10"    <!-- Default, will be configured programmatically -->
+        android:padding="4dp"
+        android:background="#DDDDDD"
+        android:layout_gravity="center"
+        >
+        <!-- Cells (e.g., Buttons or ImageViews) will be added here programmatically -->
+    </GridLayout>
+
+</RelativeLayout>
