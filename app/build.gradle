@@ -4,18 +4,16 @@ plugins {
 }
 
 android {
-    namespace 'com.example.minesweeper' // Should match package name
-    compileSdkVersion 33 // Or a recent stable version like 34
+    namespace 'com.example.minesweeper'
+    compileSdkVersion 33
     defaultConfig {
         applicationId "com.example.minesweeper"
-        minSdkVersion 21 // Android 5.0 Lollipop - good balance
-        targetSdkVersion 33 // Or a recent stable version like 34
+        minSdkVersion 21
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -29,19 +27,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    // If viewBinding or dataBinding were used, they would be enabled here:
-    // buildFeatures {
-    //     viewBinding true
-    // }
 }
 
 dependencies {
-    implementation 'androidx.core:core-ktx:1.9.0' // Use a recent stable version
-    implementation 'androidx.appcompat:appcompat:1.6.1' // Use a recent stable version
-    // Add other dependencies if they were used, e.g., material design, constraint layout
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     // implementation 'com.google.android.material:material:1.10.0'
     // implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
