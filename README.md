@@ -19,7 +19,7 @@ A simple Minesweeper game implemented for Android. This project demonstrates bas
     *   Select "Open" (or "Open an Existing Project..." / "Import Project..." depending on your Android Studio version and welcome screen).
     *   Navigate to the root directory where you cloned or extracted the project files.
     *   Select the project's root `build.gradle` file or the directory itself and click "OK" or "Open".
-    *   Android Studio will import the project, and Gradle will sync the necessary dependencies. This may take a few moments.
+    *   Android Studio will import the project. **Wait for Gradle to sync dependencies. This might take a few moments. If you encounter errors like 'unresolved reference', ensure the Gradle sync has completed successfully. You can manually trigger a sync by going to 'File' > 'Sync Project with Gradle Files'.**
 
 3.  **Build and Run:**
     *   Once Gradle sync is complete and the project has been indexed, you can build and run the app.

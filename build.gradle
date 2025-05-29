@@ -1,0 +1,22 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '8.1.1' apply false // Use a recent stable AGP version
+    id 'com.android.library' version '8.1.1' apply false // If you had library modules
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false // Match Kotlin version if possible, or use a recent stable one
+}
+
+// It's now recommended to define repositories in settings.gradle for newer AGP versions.
+// However, for broader compatibility or older setups, defining them here is also common.
+// If settings.gradle handles repositories, this block can be omitted or kept for buildscript only.
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        // You can add other repositories like jcenter() if needed, though it's deprecated.
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
